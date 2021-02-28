@@ -1,9 +1,9 @@
 {
-    "llvm-target": "armv7r-none-eabihf",
-    "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
-    "arch": "arm",
+    "llvm-target": "aarch64-unknown-none",
+    "data-layout": "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128",
+    "arch": "aarch64",
     "target-endian": "little",
-    "target-pointer-width": "32",
+    "target-pointer-width": "64",
     "target-c-int-width": "32",
     "os": "none",
     "executables": true,
@@ -11,13 +11,14 @@
     "linker": "rust-lld",
     "panic-strategy": "abort",
     "disable-redzone": true,
-    "features": "+vfp3,-d32,-fp16",
+    "max-atomic-width": 128,
+    "features": "+strict-align,+neon,+fp-armv8",
     "unsupported-abis": [
-      "stdcall",
-      "fastcall",
-      "vectorcall",
-      "thiscall",
-      "win64",
-      "sysv64"
+        "stdcall",
+        "fastcall",
+        "vectorcall",
+        "thiscall",
+        "win64",
+        "sysv64"
     ]
 }

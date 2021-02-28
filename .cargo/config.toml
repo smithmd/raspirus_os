@@ -4,13 +4,3 @@ build-std-features = ["compiler-builtins-mem"]
 
 [build]
 target = "target_configs/arm-raspirus_os.json"
-
-# [target.arm-raspirus_os]
-# linker = "arm-none-eabi-gcc"
-
-# [target.armv7r-unknown-none]
-# linker = "arm-none-eabi-gcc"
-
-# [target.arm-none-eabi]
-# linker = "arm-none-eabi-gcc"
-
