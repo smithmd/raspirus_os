@@ -2,16 +2,14 @@
 
 ### Building
 
-Rust version:
+command:  
+`cargo build --target target_configs/arm-raspirus_os.json`
 
-```
-rustc 1.50.0 (cb75ad5db 2021-02-10)
-binary: rustc
-commit-hash: cb75ad5db02783e8b0222fee363c5f63f7e2cf5b
-commit-date: 2021-02-10
-host: x86_64-unknown-linux-gnu
-release: 1.50.0
-```
+Rust version:  
+`rustc 1.52.0-nightly (94736c434 2021-02-27)`
 
-target:
+target:  
 `rustup target add armv7r-none-eabihf`
+
+gcc:  
+`arm-none-eabi-gcc`
