@@ -1,4 +1,4 @@
-# RusPiRus_OS
+# RasPiRus_OS
 
 ### Building
 
