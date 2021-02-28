@@ -3,8 +3,10 @@
 ### Building
 
 Build command:
+
+Default `cargo build` target is arm for raspberry pi.
  
-*   Arm: `cargo build --target target_configs/arm-raspirus_os.json`
+*   arm: `cargo build --target target_configs/arm-raspirus_os.json`
 *   x86_64: `cargo build --target target_configs/x86_64-raspirus_os.json`
 
 
