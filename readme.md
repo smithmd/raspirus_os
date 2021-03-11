@@ -1,5 +1,14 @@
 # RasPiRus_OS
 
+### Required Stuff
+
+[cargo-binutils](https://github.com/rust-embedded/cargo-binutils)
+
+```
+cargo install cargo-binutils
+rustup component add llvm-tools-preview
+```
+
 ### Building
 
 Build command:
@@ -27,7 +36,7 @@ gcc:
 
 ### QEMU
 
-`qemu-system-aarch64 -M raspi3 -d in_asm  -kernel kernel8.img`
+`qemu-system-aarch64 -M raspi3 -d in_asm -kernel kernel8.img`
 
 ###### Note: QEMU only supports up to raspberry pi 3
 
